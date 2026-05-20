@@ -15,7 +15,6 @@ class Doctorine extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.white,
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(body: Center(child: Text("nnnnnnnnnnnnnnnnnnnnnnn"))),
     );
   }
 }

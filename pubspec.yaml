@@ -53,7 +53,8 @@ flutter:
 
   
   assets:
-    - assets/
+    - assets/images/svgs/
+    - assets/images/
 
   # example:
   # fonts:
@@ -67,3 +68,9 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
+flutter_assets:
+  assets_path: assets/
+  output_path: lib/core/constants/
+  filename: app_assets.dart
+  field_prefix: assets
+  classname: AppAssets

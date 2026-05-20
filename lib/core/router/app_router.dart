@@ -1,4 +1,5 @@
 import 'package:doctorine/core/router/app_routes.dart';
+import 'package:doctorine/features/onboarding/ui/onboarding_view.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {
@@ -13,8 +14,7 @@ class AppRouter {
       case AppRoutes.onboarding:
         return MaterialPageRoute(
           settings: setting,
-          builder: (_) =>
-              const Scaffold(body: Center(child: Text("Onboarding Screen"))),
+          builder: (_) => const OnboardingView(),
         );
       case AppRoutes.login:
         return MaterialPageRoute(
