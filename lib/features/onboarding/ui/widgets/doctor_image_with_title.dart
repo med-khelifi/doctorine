@@ -21,7 +21,7 @@ class DoctorImageWithTitle extends StatelessWidget {
             ),
           ),
           child: Image.asset(
-            width: double.infinity,
+            //width: double.infinity,
             AppAssets.assetsImagesOnboardingDoctor,
             fit: BoxFit.cover,
           ),
