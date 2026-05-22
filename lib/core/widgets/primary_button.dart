@@ -1,3 +1,4 @@
+import 'package:doctorine/core/constants/app_styles.dart';
 import 'package:doctorine/core/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -12,14 +13,7 @@ class PrimaryButton extends StatelessWidget {
       height: 56,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       minWidth: double.infinity,
-      child: const Text(
-        "Get Started",
-        style: TextStyle(
-          color: AppColors.white,
-          fontSize: 16,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
+      child: const Text("Get Started", style: AppStyles.textStyleBold16),
     );
   }
 }

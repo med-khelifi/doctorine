@@ -1,3 +1,5 @@
+import 'package:doctorine/core/constants/app_styles.dart';
+import 'package:doctorine/core/helpers/spaces.dart';
 import 'package:doctorine/core/theme/app_colors.dart';
 import 'package:doctorine/core/widgets/app_logo_and_name.dart';
 import 'package:doctorine/core/widgets/primary_button.dart';
@@ -9,7 +11,7 @@ class OnboardingView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  const Scaffold(
       bottomNavigationBar: Padding(
         padding: EdgeInsets.only(bottom: 35, left: 20, right: 20),
         child: PrimaryButton(),
@@ -19,16 +21,16 @@ class OnboardingView extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             children: [
-              SizedBox(height: 35),
+              VerticalSpace(height: 35),
               AppLogoAndName(),
-              SizedBox(height: 40),
+              VerticalSpace(height: 40),
               DoctorImageWithTitle(),
               Text(
                 "Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.",
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 12, color: AppColors.grey),
+                style: AppStyles.textStyleRegular12,
               ),
-              SizedBox(height: 32),
+              VerticalSpace(height: 32),
             ],
           ),
         ),

@@ -1,8 +1,8 @@
 flutter_native_splash:
 
   #! FOR ALL PLATFORM, except Android 12+:
-  color: "#ffffff"  ##====================================[REQUIRED]==========
-  image:                assets/images/splash.png
+  color: "#ffffff"  
+  image: assets/images/splash.png
 
   #! ANDROID 12+ configuration:
   android_12:
