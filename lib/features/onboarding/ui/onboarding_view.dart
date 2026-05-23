@@ -1,6 +1,5 @@
 import 'package:doctorine/core/constants/app_styles.dart';
 import 'package:doctorine/core/helpers/spaces.dart';
-import 'package:doctorine/core/theme/app_colors.dart';
 import 'package:doctorine/core/widgets/app_logo_and_name.dart';
 import 'package:doctorine/core/widgets/primary_button.dart';
 import 'package:doctorine/features/onboarding/ui/widgets/doctor_image_with_title.dart';
@@ -11,10 +10,10 @@ class OnboardingView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  const Scaffold(
+    return const Scaffold(
       bottomNavigationBar: Padding(
         padding: EdgeInsets.only(bottom: 35, left: 20, right: 20),
-        child: PrimaryButton(),
+        child: PrimaryButton(text: "Get Started"),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
