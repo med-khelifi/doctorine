@@ -10,7 +10,7 @@ class Doctorine extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       onGenerateRoute: AppRouter().onGenerateRoute,
-      initialRoute: AppRoutes.onboarding,
+      initialRoute: AppRoutes.login,
       theme: ThemeData(
         scaffoldBackgroundColor: AppColors.white,
         primarySwatch: Colors.blue,
