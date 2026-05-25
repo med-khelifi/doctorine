@@ -37,7 +37,7 @@ class _PrimaryTextFormFieldState extends State<PrimaryTextFormField> {
       builder: (context, value, w) {
         return TextFormField(
           validator: widget.validator,
-          obscureText: widget.isPassword,
+          obscureText: widget.isPassword && !value,
           decoration: InputDecoration(
             hintText: widget.hint,
             hintStyle: AppStyles.textStyleMedium14.copyWith(
@@ -47,9 +47,11 @@ class _PrimaryTextFormFieldState extends State<PrimaryTextFormField> {
                 ? IconButton(
                     onPressed: () => isVisible.value = !isVisible.value,
                     icon: Icon(
+                      color: AppColors.mainBlue,
+                      size: 24,
                       isVisible.value
-                          ? CupertinoIcons.eye_slash
-                          : CupertinoIcons.eye,
+                          ? CupertinoIcons.eye
+                          : CupertinoIcons.eye_slash,
                     ),
                   )
                 : null,
